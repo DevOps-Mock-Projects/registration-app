@@ -16,7 +16,7 @@
 
     <properties>
          <final.artifact.name>registration-app</final.artifact.name> 
-         <revision>${major.version}.${minor.version}.${patch.version}-${build.source}${build.number}-SNAPSHOT</revision>
+         <revision>${major.version}.${minor.version}.${patch.version}-${build.source}${build.number}</revision>
  
          <!--
          NOTE: If "-SNAPSHOT" is appended to revision/version at the end, then this artifact is uploaded to the maven-snapshots repository in the artifactory.
