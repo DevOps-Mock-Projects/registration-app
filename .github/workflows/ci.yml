@@ -128,8 +128,8 @@ jobs:
         file: ./Dockerfile
         push: ${{ github.event.inputs.shouldPushImageToDockerHub }}
         tags: |
-          ghcr.io/DevOps-Mock-Projects/github-actions.demo-registration-app:${{ github.event.inputs.imageTag }}
-          ghcr.io/DevOps-Mock-Projects/github-actions.demo-registration-app:${{ env.APPLICATION_VERSION }}
+          ghcr.io/devops-mock-projects/github-actions.demo-registration-app:${{ github.event.inputs.imageTag }}
+          ghcr.io/devops-mock-projects/github-actions.demo-registration-app:${{ env.APPLICATION_VERSION }}
 
 
 
