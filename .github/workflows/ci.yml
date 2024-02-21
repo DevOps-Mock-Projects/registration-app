@@ -13,7 +13,7 @@ on:
 
 jobs:
   build-and-push-artifacts:
-    environment: DEV
+    # environment: DEV
     runs-on: ubuntu-latest
 
     env:
@@ -128,8 +128,8 @@ jobs:
         file: ./Dockerfile
         push: ${{ github.event.inputs.shouldPushImageToDockerHub }}
         tags: |
-          ghcr.io/${{ github.actor }}/github-actions.demo-registration-app:${{ github.event.inputs.imageTag }}
-          ghcr.io/${{ github.actor }}/github-actions.demo-registration-app:${{ env.APPLICATION_VERSION }}
+          ghcr.io/DevOps-Mock-Projects/github-actions.demo-registration-app:${{ github.event.inputs.imageTag }}
+          ghcr.io/DevOps-Mock-Projects/github-actions.demo-registration-app:${{ env.APPLICATION_VERSION }}
 
 
 
