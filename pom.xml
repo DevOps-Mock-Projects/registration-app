@@ -15,13 +15,14 @@
     <description>Demo project for Spring Boot to create registration API</description>
 
     <properties>
-        <final.artifact.name>registration-app</final.artifact.name> 
+         <final.artifact.name>registration-app</final.artifact.name> 
          <revision>${major.version}.${minor.version}.${patch.version}-${build.source}${build.number}</revision>
-             
+ 
          <!--
-         NOTE: If "-SNAPSHOT" is appended to revision/version at the end, then this artifact is uploaded to the maven-snapshots repository in the artifactory
+         NOTE: If "-SNAPSHOT" is appended to revision/version at the end, then this artifact is uploaded to the maven-snapshots repository in the artifactory.
+         For example:
+         <revision>${major.version}.${minor.version}.${patch.version}-${build.source}${build.number}-SNAPSHOT</revision>
          -->
-        <!-- <revision>${major.version}.${minor.version}.${patch.version}-${build.source}${build.number}-SNAPSHOT</revision>  -->
              
         <major.version>1</major.version>
         <minor.version>0</minor.version>
